@@ -15,8 +15,8 @@ body{
     line-height: 1.5;
     list-style: none;
     list-style-position: inside;
-    padding: 0 1rem 2.7rem 0.5rem;
-    position: relative; 
+    padding: 1.5rem 1rem 2.7rem 0.5rem;
+    position: absolute; 
     margin-left: 1.25rem;
     text-decoration: none;
     text-indent: 4rem;
@@ -31,7 +31,7 @@ body{
 
 #white-logo{
     width: 100%;
-    height: 100%;
+    height: 70%;
     flex-shrink: 0;
     
 }
@@ -40,10 +40,9 @@ body{
     background: #00473E;
 }
 
+
 /* .search{
     background-image: url(images/icons/search-2.png);
-    background-position: 258px -1px;
-    background-size: 22px;
     background-repeat: no-repeat;
 } */
 
