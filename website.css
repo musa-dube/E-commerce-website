@@ -23,7 +23,28 @@ nav{
 }
 
 .search{
-    
+    background-image: url(images/icons/search-2.png);
+    background-position: 258px -1px;
+    background-size: 22px;
+    background-repeat: no-repeat;
 }
 
 
+/*nav li {
+    display: inline-block;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    list-style: none;
+    list-style-position: inside;
+    padding: 0 1rem 2.7rem 0.5rem;
+    position: relative; 
+    margin-left: 1.25rem;
+    text-decoration: none;
+    text-indent: 4rem;
+}
+
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}*/
