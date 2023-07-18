@@ -9,6 +9,10 @@ body{
 }
 
 /* ---------- HOME PAGE STYLING: ---------- */
+#home-background{
+    background: #00473E;
+}
+
 .home-nav .nav-list-item, .nav-list-search {
     display: inline-block;
     font-size: 0.9rem;
@@ -64,9 +68,17 @@ body{
     margin-top: -5rem;
 }
 
-#home-background{
-    background: #00473E;
+#woman{
+    display: block;
+    margin-left: 5rem;
+    margin-right: auto;
+    margin-top: -21rem;
 }
+
+
+
+
+
 
 
 /*  ---------- ABOUT PAGE STYLING ---------- */
