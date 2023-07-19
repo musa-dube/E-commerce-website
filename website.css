@@ -53,7 +53,7 @@ main {
 }
 
 .input-search-home{
-  width: 13.75rem;
+  
   color: #ebebe3;
   border: none;
   background-color: transparent;
@@ -64,11 +64,19 @@ main {
   background-position: right;
   background-size: 1.4rem 1.4rem; 
   border-bottom: 0.095rem solid rgb(255, 255, 255);
+  width: 13.75rem;
+  outline: none;
 }
 
 .input-search-home::placeholder{
    color: #ebebe3;
    opacity: 80%;
+}
+
+.input-search-home::-webkit-search-decoration,
+.input-search-home::-webkit-search-cancel-button,
+.input-search-home::-webkit-search-results-button{
+    display: none;
 }
 
 
