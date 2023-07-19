@@ -21,6 +21,7 @@ main {
 }
 
 /* ---------- HOME PAGE STYLING: ---------- */
+
 #home-background{
     background: #00473E;
 }
@@ -126,5 +127,7 @@ main {
     color: black;
     font-weight: bold;
     font-style: italic;
- 
 }
+
+
+/*  ---------- SHOP STYLING ---------- */
