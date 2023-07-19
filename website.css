@@ -9,11 +9,22 @@ body{
     margin: 0;
     padding: 0;
     min-height: 95vh;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* ---------- HOME PAGE STYLING: ---------- */
 #home-background{
     background: #00473E;
+}
+
+.home_page{
+    max-height: 98vh;
 }
 
 .home-nav .nav-list-item, .nav-list-search {
@@ -69,7 +80,7 @@ body{
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: -5rem;
+    margin-top: -6rem;
 }
 
 #woman{
@@ -79,11 +90,22 @@ body{
     margin-top: -21rem;
 }
 
-
-
-
-
-
-
 /*  ---------- ABOUT PAGE STYLING ---------- */
 
+.about_page{
+    display: block;
+    position: relative;
+} 
+
+.about_page img{
+    display: block;
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+.about_page p{
+    position: absolute;
+    width: 50%;
+  
+}
