@@ -20,6 +20,7 @@ main {
     max-width: 100%;
 }
 
+
 /* ---------- HOME PAGE STYLING: ---------- */
 
 #home-background{
@@ -30,7 +31,7 @@ main {
     max-height: 98vh;
 }
 
-.home-nav .nav-list-item, .nav-list-search {
+.nav-list-item, .nav-list-search {
     display: inline-block;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -39,7 +40,7 @@ main {
     padding: 2rem 1rem 2.7rem 0.5rem;
     position: relative; 
     margin-left: 0.8rem;
-    margin-top: 1.5rem;
+    /*margin-top: 1.5rem;*/
     text-decoration: none;
     text-indent: 4rem;
 }
@@ -50,8 +51,18 @@ main {
     transition: transform 0.3s;
 }
 
-.home-nav .nav-list-item:hover, 
-.home-nav .nav-list-item:active{
+/*----other nav design for the rest of the website:----*/
+
+.other-nav a{
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+/*-----*/
+
+
+.nav-list-item:hover, 
+.nav-list-item:active{
     transform: scale(1.2);
 }
 
@@ -76,12 +87,35 @@ main {
    opacity: 80%;
 }
 
+/*----other nav design for the rest of the website:----*/
+.input-search{
+  border: none;
+  background-color: transparent;
+  background-image: url(images/icons/search.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 1.4rem 1.4rem; 
+  border-bottom: 0.095rem solid #333;
+  width: 13.75rem;
+  outline: none;
+}
+/*-----*/
+
 .input-search-home::-webkit-search-decoration,
 .input-search-home::-webkit-search-cancel-button,
 .input-search-home::-webkit-search-results-button{
     display: none;
 }
 
+/*----other nav design for the rest of the website:----*/
+.input-search::-webkit-search-decoration,
+.input-search::-webkit-search-cancel-button,
+.input-search::-webkit-search-results-button{
+    display: none;
+}
+/*-----*/
 
 #white-logo{
     display: block;
@@ -124,10 +158,244 @@ main {
 }
 
 #back-to-top{
-    color: black;
+    color: #333;
     font-weight: bold;
     font-style: italic;
 }
 
 
+
 /*  ---------- SHOP STYLING ---------- */
+
+.logo{
+    display: block;
+    flex-shrink: 0;
+    position: relative;
+    margin: 2.5rem 43.75rem 6.25rem;
+    margin-bottom: 0.625rem;   
+}
+
+
+.filters{
+    color: #333;
+    border-bottom: #333 ;
+    display:inline-flex;
+    /* flex direction then wrap */
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: left;
+    align-content: space-evenly;
+    padding: 0 3rem 2rem;
+    max-width: fit-content;
+    margin-left: 12.5rem;
+  }
+  
+  .row-1{
+    padding-right:7rem;
+  }
+
+  .row-2{
+    padding-right: 10.625rem;
+  }
+
+  .clear-filter{
+    text-decoration: none;
+    color: #333;
+  }
+
+  .clear-filter:active{
+    color: #74A58C;
+  }
+  
+.row-1, .row-2{
+    max-width: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.2rem;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    margin-inline: auto;
+  }
+  
+.option{
+    background-color: #74A58C;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 0.213rem;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    height: 1.5rem;
+    width: 15vh;  
+  }
+  
+.option:focus{
+    background-color: #00473E;
+    color: white;
+  }
+  
+.category{
+    color: #333;
+    border-right: 1px solid #333;
+    max-width: fit-content;
+    padding: 1rem 2rem 0 2rem;
+    /* padding: 1rem 8rem; */
+  }
+  
+  
+.heading{
+    background-color: #74A58C;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+    height: 1.5rem;
+    padding-top: 0.15rem;
+    text-align: center;
+  }
+
+  .product-display
+  {
+    border-top: #333 1px solid;
+    
+    display: flex;
+    justify-content: center; 
+    max-width: fit-content;
+    padding-left: 20px;
+    /* max-width: 1000px; */
+    margin: -40rem auto 0 23rem;
+  }
+  
+  .product-display #star-rating{
+   margin: 0.4rem 0 0.2rem 0;
+  }
+
+  .product-img{
+    border: #ffffff 1px solid;
+    border-radius: 9.5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display:block;
+    height: 69vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    max-width: 60vh;
+    white-space: nowrap;
+    margin: 2rem 0 0 ; 
+  }
+  
+  .product{
+    display: inline-block;
+    margin-right: 0.94rem;
+    /* width: 20%; */
+  }
+
+  .description-paragraph, .ingredients-list{
+    text-align: justify;
+    width: 91%;
+  }
+  
+  /* horizontal scroll bar for products */
+  
+  .product-img::-webkit-scrollbar-thumb,
+  .product-img::-webkit-scrollbar-track {
+      border-radius: 90px;
+    }
+  
+  .product-img::-webkit-scrollbar{
+    height: 12px;
+  }
+  
+  .product-img::-webkit-scrollbar-thumb {
+    background: #00473E;
+  }
+  
+  .product-img::-webkit-scrollbar-track {
+    background: #d1d1d1;
+  }
+  
+  .product-desc{
+    max-width: 70vh;
+    margin: 2rem 0 0 2rem;
+  }
+  
+  .desc-icons{
+    margin-right: 2rem;
+  }
+  
+  .desc-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;  
+  }
+  
+  .icon-labels{
+    display: flex;
+    flex-direction: column;
+    margin: -11.55rem 4rem; 
+    gap: 0.4rem;  
+  }
+  
+  
+  .checkout, .subscribe{
+    background-color: #FAAE2B;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 0.213rem;
+    color: #333;
+    font-weight: bold;
+    height: 1.5rem;
+    
+  }
+  
+  .checkout{
+    width: 8vw;  
+    margin: 9.5rem auto;
+  }
+  
+  .checkout:active{
+      background-color:#00473E;
+      color: whitesmoke;
+      transition: transform 0.5s ease-out;
+  }
+  
+  #subscribe{
+    width: 12vh;
+  }
+  
+  .bag{
+    margin:0 0.1rem ;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: filter var(0.3s);
+  }
+  
+  #add-item{
+    margin-left:0.5rem;
+  }
+  
+  .bag:hover{
+    filter: brightness(1.1);
+  }
+  
+  .button:active{
+    filter: brightness(0.9);
+  }
+  
+  .bag > img {
+    display: block;
+    transition: transform var(0.3s) var(cubic-bezier(0.68, -0.6, 0.32, 1.6));
+    z-index: 1;
+  }
+  
+  .bag:hover > img{
+    transform: scale(1.05);
+  }
+  
+  .bag:active > img{
+    transform: scale(0.95);
+  }
+  
