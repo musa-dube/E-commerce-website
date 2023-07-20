@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="An e-commerce website that sells skin care products">
+    <meta name="description" content="An e-commerce website that sells skin care products">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <link rel="stylesheet" href="website.css">
+    <script src="functions.js" async></script>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico">
     <title>Shop</title>
 </head>
 <body>
@@ -49,78 +55,91 @@
             <label for="select">Select A Category: </label><br><br>
             <!-- face -->
             <section class="heading"><label>Face Products</label></section><br>
-            <input type="checkbox" name="category-box" id="face" value="Face Washes"><label for="face-washes" >Face Washes</label><br>
-            <input type="checkbox" name="category-box" id="mask" value="Masks"><label for="masks">Masks</label><br>
-            <input type="checkbox" name="category-box" id="cs" value="Serums & Creams"><label for="creams-and-serums">Creams & Serums</label><br><br><br>
+            <input type="checkbox" name="category-box" class="category" id="face" value="Face Washes"><label for="face-washes" >Face Washes</label><br>
+            <input type="checkbox" name="category-box" class="category" id="mask" value="Masks"><label for="masks">Masks</label><br>
+            <input type="checkbox" name="category-box" class="category" id="creams-and-serums" value="Creams & Serums"><label for="creams-and-serums">Creams & Serums</label><br><br><br>
 
             <!-- body -->
             <section class="heading"><label>Body Products</label></section><br>
-            <input type="checkbox" name="category-box" id="frag-wash" value="Fragrant Body Wash"><label for="fragrant-body-wash">Fragrant Body Wash</label><br>
-            <input type="checkbox" name="category-box" id="soap" value="Soaps"><label for="soaps">Soaps</label><br>
-            <input type="checkbox" name="category-box" id="oils-lotion" value="Oils & Lotions"><label for="oils-and-lotions">Oils & Lotions</label><br><br><br>
+            <input type="checkbox" name="category-box" class="category" id="frag-wash" value="Fragrant Body Wash"><label for="fragrant-body-wash">Fragrant Body Wash</label><br>
+            <input type="checkbox" name="category-box" class="category" id="soap" value="Soaps"><label for="soaps">Soaps</label><br>
+            <input type="checkbox" name="category-box" class="category" id="oils-lotion" value="Oils & Lotions"><label for="oils-and-lotions">Oils & Lotions</label><br><br><br>
 
             <!-- Tools -->
             <section class="heading"><label>Face & Body Tools</label></section><br>
-            <input type="checkbox" name="category-box" id="bc" value="Brushes & Cleansers"><label for="brushes-cleansers">Brushes & Cleansers</label><br>
-            <input type="checkbox" name="category-box" id="rm" value="Rollers & Massagers"><label for="rollers-massagers">Rollers & Massagers</label><br>
-            <input type="checkbox" name="category-box" id="sg" value="Sponges & Gloves"><label for="sponges-gloves">Sponges & Gloves</label><br><br><br>
+            <input type="checkbox" name="category-box" class="category" id="brush-cleanser" value="Brushes & Cleansers"><label for="brushes-cleansers">Brushes & Cleansers</label><br>
+            <input type="checkbox" name="category-box" class="category" id="roller-massager" value="Rollers & Massagers"><label for="rollers-massagers">Rollers & Massagers</label><br>
+            <input type="checkbox" name="category-box" class="category" id="sponge-glove" value="Sponges & Gloves"><label for="sponges-gloves">Sponges & Gloves</label><br><br><br>
             <section class="heading"><label>GiftBoxes</label></section>
         </article>
 
         <br><br>
 
         <article class="product-display">
-            <!-- product info section -->
-         <section class="withreview">
-            <section class="prod-img">
-                <!-- 4 products -->
-                <div class="image">
-                    <img src="images/face/serums&creams/lemon-turmeric-serums.png" alt="lemon-turmeric-serum" >
-                </div>
+                <!-- product info section -->
+            <section class="review-section">
+                <section class="product-img">
+                    <!-- 4 products per horizontal scroll-->
+                    <div class="product">
+                        <img src="images/products/serums&creams/lemon-turmeric-serums.png" alt="lemon-turmeric-serum" >
+                    </div>
+                    <div class="product">
+                        <img src="images/products/serums&creams/bakchuoil-serum.png" alt="bakchuoil-serum" >
+                    </div>
+                    <div class="product">
+                        <img src="images/products/serums&creams/creams.png" alt="lemon-turmeric-serum" >
+                    </div>
+                    <div class="product">
+                        <img src="images/products/serums&creams/vitamin-ce-rose.png" alt="vitamin-ce-rose" >
+                    </div>
+                    <div class="product">
+                        <img src="images/products/serums&creams/sale.png" alt="sale" >
+                    </div>
+                </section>
+
+                        <!-- Review section: -->
+
+                        <!-- <label for="" style="font-weight: bold; ">Reviews:</label>
+                        <article class="reviews">
+                            <div class="box">
+                                <label for="customer">Katendi</label><br>
+                                <img src="images/icons/stars.png" alt="stars" height="30"><br>
+                                <label for="review-date">2023/05/25</label>
+                                <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
+                                </p>
+                            </div> <br>
+                            <div class="box">
+                                <label for="customer">Michelle</label><br>
+                                <img src="images/icons/stars.png" alt="stars" height="30"><br>
+                                <label for="review-date">2023/05/25</label>
+                                <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
+                                </p>
+                            </div><br>
+
+                            <div class="box">
+                                <label for="customer">Karl</label><br>
+                                <img src="images/icons/stars.png" alt="stars" height="30"><br>
+                                <label for="review-date">2023/05/25</label>
+                                <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
+                                </p>
+                            </div><br>
+                            <div class="box">
+                                <label for="customer">Juhi</label><br>
+                                <img src="images/icons/stars.png" alt="stars" height="30"><br>
+                                <label for="review-date">2023/05/25</label>
+                                <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
+                                </p>
+                            </div>
+                            <br>
+                            <div class="box">
+                                <label for="customer">Katendi</label><br>
+                                <img src="images/icons/stars.png" alt="stars" height="30"><br>
+                                <label for="review-date">2023/05/25</label>
+                                <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
+                                </p>
+                            </div>
+                        </article> -->
             </section>
-
-
-            <!-- <label for="" style="font-weight: bold; ">Reviews:</label>
-            <article class="reviews">
-                <div class="box">
-                    <label for="customer">Katendi</label><br>
-                    <img src="images/icons/stars.png" alt="stars" height="30"><br>
-                    <label for="review-date">2023/05/25</label>
-                    <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
-                    </p>
-                </div> <br>
-                <div class="box">
-                    <label for="customer">Michelle</label><br>
-                    <img src="images/icons/stars.png" alt="stars" height="30"><br>
-                    <label for="review-date">2023/05/25</label>
-                    <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
-                    </p>
-                </div><br>
-
-                <div class="box">
-                    <label for="customer">Karl</label><br>
-                    <img src="images/icons/stars.png" alt="stars" height="30"><br>
-                    <label for="review-date">2023/05/25</label>
-                    <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
-                    </p>
-                </div><br>
-                <div class="box">
-                    <label for="customer">Juhi</label><br>
-                    <img src="images/icons/stars.png" alt="stars" height="30"><br>
-                    <label for="review-date">2023/05/25</label>
-                    <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
-                    </p>
-                </div>
-                <br>
-                <div class="box">
-                    <label for="customer">Katendi</label><br>
-                    <img src="images/icons/stars.png" alt="stars" height="30"><br>
-                    <label for="review-date">2023/05/25</label>
-                    <p id="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error ipsam officia cumque. Maxime dignissimos natus, sunt sapiente at magni praesentium iure quasi dolorem nostrum dolores molestiae numquam error enim.
-                    </p>
-                </div>
-        </article> -->
-          </section>
 
 
             <section class="prod-desc">
