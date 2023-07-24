@@ -168,7 +168,7 @@ main {
 
 /*  */
 .shop-main{
-  max-height: 300vh;
+  max-height: fit-content;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -245,13 +245,24 @@ main {
 .category{
     color: #333;
     max-width: fit-content;
-    padding: 1rem 2rem 0 2rem;
-    /* padding: 1rem 8rem; */
+    /* padding: 1rem 2rem 0 2rem; */
+    padding: 1rem 7rem;
   }
+
+.line{
+  background-color: #333;
+  position: absolute;
+  top: 44.5rem;
+  left: 21rem;
+  width: 0.063rem;
+  height: 70rem;
+  z-index: -1;
+}
   
   
 .heading{
     background-color: #74A58C;
+    border-radius: 0.213rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: none;
     color: #333;
@@ -267,7 +278,7 @@ main {
     border-top: #333 1px solid;
     display: flex;
     justify-content: center; 
-    max-width: fit-content;
+    max-width: 990px;
     padding-left: 20px;
     margin: -40rem auto 0 23rem;
   }
@@ -304,19 +315,28 @@ main {
   /* horizontal scroll bar for products */
   
   .product-img::-webkit-scrollbar-thumb,
-  .product-img::-webkit-scrollbar-track {
+  .product-img::-webkit-scrollbar-track,
+  .reviews::-webkit-scrollbar-thumb,
+  .reviews::-webkit-scrollbar-track {
       border-radius: 90px;
     }
   
-  .product-img::-webkit-scrollbar{
-    height: 12px;
+  .product-img::-webkit-scrollbar 
+ {
+    height: 0.75rem;
   }
-  
-  .product-img::-webkit-scrollbar-thumb {
+
+  .reviews::-webkit-scrollbar{
+    height:0.040rem;
+  }
+
+  .product-img::-webkit-scrollbar-thumb,
+  .reviews::-webkit-scrollbar-thumb {
     background: #00473E;
   }
   
-  .product-img::-webkit-scrollbar-track {
+  .product-img::-webkit-scrollbar-track,
+  .reviews::-webkit-scrollbar-track  {
     background: #d1d1d1;
   }
   
@@ -399,7 +419,29 @@ main {
   .bag:active > img{
     transform: scale(0.95);
   }
+
+   /* review section */
   
+.reviews{
+  display:block;
+  padding-right: 0.938rem;
+  text-align: justify;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  max-width: 60vh;
+  height: 40%;
+}
+
+.box{
+  
+  background-color:#74A58C;
+  border-radius: 0.213rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5rem;
+
+}
+
 
 /* FOOTER STYLING  */
 
@@ -443,6 +485,11 @@ footer{
   color: whitesmoke;
   font-family: 'Nunito', sans-serif;
 
+}
+
+.text-box{
+  border-radius: 0.213rem;
+  height: 2rem;
 }
 
 #subscribe-text{
