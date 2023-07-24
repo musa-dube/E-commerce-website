@@ -166,7 +166,7 @@ main {
 
 /*  ---------- SHOP STYLING ---------- */
 
-/*  */
+
 .shop-main{
   max-height: 320vh;
   overflow-x: hidden;
@@ -182,6 +182,95 @@ main {
     margin: 2.5rem 43.75rem 6.25rem;
     margin-bottom: 0.625rem;   
 }
+
+/* banner animation */
+
+@keyframes slide_next {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%); 
+  }
+}
+
+.banner-container{
+  white-space: nowrap;
+}
+
+.banner-container:hover .banners {
+  animation-play-state: paused;
+}
+
+.banners{
+  display: inline-block;
+  animation: slide_next 22s infinite linear;
+}
+
+.banners next {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .first-banner{
+    animation: slide_next 30s linear infinite;
+    -webkit-animation: slide_next 30s linear infinite;
+    -moz-animation: slide_next 30s linear infinite;
+    -ms-animation: slide_next 30s linear infinite;
+    -o-animation: slide_next 30s linear infinite;
+    
+}
+
+
+@keyframes "slide_next"{
+  0%{
+    margin-left: 0px;
+  }
+
+  100%{
+    margin-left: -2125px;
+  }
+}
+
+@-moz-keyframes slide_next {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+  
+ }
+  
+ @-webkit-keyframes "slide_next" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+  
+ }
+  
+ @-ms-keyframes "slide_next" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+  
+ }
+  
+ @-o-keyframes "slide_next" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left : -2125px;
+  }
+} */
 
 
 .filters{
@@ -252,7 +341,7 @@ main {
 .line{
   background-color: #333;
   position: absolute;
-  top: 44.5rem;
+  top: 47rem;
   left: 21rem;
   width: 0.063rem;
   height: 70rem;
