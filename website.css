@@ -11,7 +11,6 @@ body{
     padding: 0;
     min-height: 95vh;
     overflow-x: hidden;
-
 }
 
 main {
@@ -167,6 +166,13 @@ main {
 
 /*  ---------- SHOP STYLING ---------- */
 
+/*  */
+.shop-main{
+  margin: 0;
+  padding: 0;
+  max-height: 300vh;
+}
+
 .logo{
     display: block;
     flex-shrink: 0;
@@ -236,7 +242,6 @@ main {
   
 .category{
     color: #333;
-    border-right: 1px solid #333;
     max-width: fit-content;
     padding: 1rem 2rem 0 2rem;
     /* padding: 1rem 8rem; */
@@ -258,12 +263,10 @@ main {
   .product-display
   {
     border-top: #333 1px solid;
-    
     display: flex;
     justify-content: center; 
     max-width: fit-content;
     padding-left: 20px;
-    /* max-width: 1000px; */
     margin: -40rem auto 0 23rem;
   }
   
@@ -350,7 +353,7 @@ main {
     
   }
   
-  .checkout{
+  .checkout, #subscribe{
     width: 8vw;  
     margin: 9.5rem auto;
   }
@@ -359,10 +362,6 @@ main {
       background-color:#00473E;
       color: whitesmoke;
       transition: transform 0.5s ease-out;
-  }
-  
-  #subscribe{
-    width: 12vh;
   }
   
   .bag{
@@ -399,3 +398,56 @@ main {
     transform: scale(0.95);
   }
   
+
+/* FOOTER STYLING  */
+
+footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  background-color: #00473E;
+
+}
+
+.footer-info{
+  display: flex;
+  padding: 0 3rem 3rem;
+  
+}
+
+.footer-info a{
+  position: relative;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer-info a::after {
+  display: block;
+  content: "";
+  bottom: 0;
+  height:0.031rem;
+  width: 0;
+  background: none repeat scroll 0 0 transparent;
+  background: whitesmoke;
+  left: 50%;
+  position: relative;
+
+}
+
+.foot{
+  width: 35vh;
+  padding-top: 1rem;
+  color: whitesmoke;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+#subscribe-text{
+  background-color:whitesmoke;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  height: 1.3rem;
+  outline: none;
+}
