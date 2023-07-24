@@ -168,9 +168,11 @@ main {
 
 /*  */
 .shop-main{
-  margin: 0;
-  padding: 0;
   max-height: 300vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .logo{
