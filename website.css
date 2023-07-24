@@ -168,11 +168,11 @@ main {
 
 /*  */
 .shop-main{
-  max-height: fit-content;
+  max-height: 320vh;
   overflow-x: hidden;
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
-
 }
 
 .logo{
