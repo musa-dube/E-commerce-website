@@ -481,7 +481,24 @@ main {
   flex-direction: column;
 }
 
+.post-front{
+  width: 30%;
+  height: 100%;
+ 
+}
 
+.post-front .post-description {
+  /* front content styles */
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: -1rem;
+ 
+}
 
 /* FOOTER STYLING  */
 
