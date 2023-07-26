@@ -184,8 +184,7 @@ main {
 }
 
 /* banner animation */
-
-@keyframes slide_next {
+ @keyframes slide_next {
   from {
       transform: translateX(0);
   }
@@ -204,13 +203,12 @@ main {
 
 .banners{
   display: inline-block;
-  animation: slide_next 22s infinite linear;
-}
+  animation: slide_next 26s infinite linear;
+} 
 
-.banners next {
+ .banners .next {
   flex-shrink: 0;
-  width: 100%;
-  height: 100%;
+
 }
 
 
@@ -475,30 +473,57 @@ main {
 
 /* BLOG STYLING */
 
-.blog-main, .bag-main{
-  min-height: 300vh;
+.blog-main{
+  min-height: 220vh;
   display: flex;
   flex-direction: column;
 }
 
-.post-front{
-  width: 30%;
-  height: 100%;
- 
+.post-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin:-3rem 2rem ;
 }
 
-.post-front .post-description {
-  /* front content styles */
-  background-color: #f9f9f9;
+.post-card {
+  background-color: #7f7979;
+  border-radius: 1rem;
   color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-left: -1rem;
- 
+  height: 26.563rem;
+  width: 30%;
+  margin: 5rem 1.5rem 0;
 }
+
+.post-card h3{
+  font-size: 1em;
+}
+
+.post-card a{
+  text-decoration: transparent;
+  color: #333;
+}
+
+.post-descripion{
+  background-color: #7f7979;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 11rem 1.5rem 0;
+  min-height: 40rem;
+}
+
+.content p{
+  width: 50%;
+  text-align: justify;
+
+}
+
 
 /* FOOTER STYLING  */
 
