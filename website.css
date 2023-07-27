@@ -203,7 +203,7 @@ main {
 
 .banners{
   display: inline-block;
-  animation: slide_next 26s infinite linear;
+  animation: slide_next 30s infinite linear;
 } 
 
  .banners .next {
@@ -521,7 +521,6 @@ main {
 .content p{
   width: 50%;
   text-align: justify;
-
 }
 
 
