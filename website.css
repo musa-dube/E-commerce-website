@@ -19,6 +19,9 @@ main {
     max-width: 100%;
 }
 
+a{
+  transition: 0.5s;
+}
 
 /* ---------- HOME PAGE STYLING: ---------- */
 
@@ -203,7 +206,7 @@ main {
 
 .banners{
   display: inline-block;
-  animation: slide_next 30s infinite linear;
+  animation: slide_next 35s infinite linear;
 } 
 
  .banners .next {
@@ -480,6 +483,7 @@ main {
 }
 
 .post-container{
+  color: #333;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -513,30 +517,35 @@ main {
 .post-card:hover,
 .post-card a:hover
 {
-  
   color: whitesmoke;
   background-color:#00473E;
 }
 
-.post-descripion{
-  background-color: #7f7979;
+.post-description{
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   border-radius: 1rem;
   margin: 11rem 1.5rem 0;
   min-height: 40rem;
 }
 
-
-
-
-
-.content p{
-  width: 50%;
-  text-align: justify;
+#content-image-id{
+ border-radius:1rem ;
+  margin: 2rem;
+  height: 40rem;
 }
 
+.content{
+  margin-top: 2rem;
+  margin-left: 12rem;
+  font-size: large;
+}
+
+.content p{
+  width: 75%;
+  text-align: justify;
+}
 
 /* FOOTER STYLING  */
 
