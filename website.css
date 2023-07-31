@@ -530,8 +530,20 @@ a{
   min-height: 40rem;
 }
 
+#description-2 .content p,
+#description-3 .content p
+{
+  width: 80%;
+}
+
+#description-2 .content,
+#description-3 .content{
+  margin-left: 5rem;
+}
+
+
 #content-image-id{
- border-radius:1rem ;
+  border-radius:1rem ;
   margin: 2rem;
   height: 40rem;
 }
