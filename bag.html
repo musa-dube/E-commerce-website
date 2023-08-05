@@ -14,30 +14,103 @@
 
 
 <body>
-    <main class="bag-main">
-        <img class="logo" id="logo-id" src="images/icons/logo-2.png" alt="careflow-logo" height="70" width="220">
-        <nav class="other-nav">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="index.html" target="_self">HOME</a></li>
-                <li class="nav-list-item"><a href="#aboutID"  target="_self" >ABOUT</a></li>
-                <li class="nav-list-item"><a href="shop.html"  target="_self">SHOP</a></li>
-                <li class="nav-list-item"><a href="bag.html"  target="_elf">BAG</a></li>
+    <main class="bag-body">
+        <article class="bag-nav">
+            <img class="logo" id="logo-id" src="images/icons/logo-2.png" alt="careflow-logo" height="70" width="220">
+            <nav class="other-nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="index.html" target="_self">HOME</a></li>
+                    <li class="nav-list-item"><a href="#aboutID"  target="_self" >ABOUT</a></li>
+                    <li class="nav-list-item"><a href="shop.html"  target="_self">SHOP</a></li>
+                    <li class="nav-list-item"><a href="bag.html"  target="_elf">BAG</a></li>
+    
+                    <!-- search feature: -->
+                    <li class="nav-list-search">
+                        <input type="search" name="search" class="input-search" placeholder="Type product name ...">
+                    </li>
+            
+                    <li class="nav-list-item"><a href="blog.html"  target="_blank">BLOG</a></li>
+                    <li class="nav-list-item"><a href="contact.html"  target="_self">CONTACT</a></li>
+                    <li class="nav-list-item"><a href="account.html"  target="_self">SIGN IN/UP</a></li>
+                </ul>
+            </nav>
+    
+        </article>
+       
 
-                <!-- search feature: -->
-                <li class="nav-list-search">
-                    <input type="search" name="search" class="input-search" placeholder="Type product name ...">
-                </li>
-        
-                <li class="nav-list-item"><a href="blog.html"  target="_blank">BLOG</a></li>
-                <li class="nav-list-item"><a href="contact.html"  target="_self">CONTACT</a></li>
-                <li class="nav-list-item"><a href="account.html"  target="_self">SIGN IN/UP</a></li>
-            </ul>
-        </nav>
-
-
-      
-        
-
+    <!-- bag item details -->
+    <section class="inner-box">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Sub Total</th>
+  
+            </tr>
+            <tr>
+                <td>
+                    <!-- <section class="item-info">
+                        <img src="images/giftbox/classic.png" alt="classic" height="150">
+                        <div>
+                            <label for="prod-name">Classic-Style GiftBox</label><br>
+                            <small>R 750.00</small><br>
+                        </div>
+                    </section>     -->
+                </td>
+                <td class="center">
+                    <button class="quantity-btn"><img class="quantity-img" src="images/icons/plus.png" alt="remove" height="25"></button>
+                    <input type="number" name="" id="quantity" value="1">
+                    <button class="quantity-btn"><img class="quantity-img"  src="images/icons/minus.png" alt="remove" height="25"></button>
+                </td>
+                <td class="price-recp"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="center"></td>
+                <td class="price-recp">
+                <br>
+                Tax (15%) <br>
+                Shipping fee (2%) <br>
+                 </td>
+            </tr>
+            <tr>
+                <td class="end-bill">Grand Total</td>
+                <td class="center"></td>
+                <td class="end-bill" id="end-bill"></td>
+            </tr>
+        </table>
+    <section class="to-ship-to">
+        <section class="to-customer">
+            <label for="to" class="title">To:</label><br><br>
+            <label for="name">Musa Dube</label><br><br>
+            <label for="email">musadube@gmail.com</label><br>
+            <label for="tel"><pre style="font-family: 'Nunito', sans-serif;">+27 83645 7769</pre></label><br>
+            </section>
+                <section class="ship-to-address">
+                    <label for="address-ship"  class="title">Shipping Address:</label><br><br>
+                    <label for="line1">49 Mulberg Lane Bedfordview</label><br><br>
+                    <label for="line2">2009</label><br><br>
+                    <label for="line3">Johannesburg</label><br>
+                </section>
+        </section>
+        <section class="order-info">
+            <section class="order-labels">
+                <label for="order-num">Order Number:</label><br><br>
+                <label for="date">Date:</label><br><br>
+                <label for="exp-date">Expected Delivery Date:</label><br><br><br><br>
+            </section>
+                <section class="response">
+                    <label for="num">01F15FFDE5</label><br><br>
+                    <label for="date-resp">2023/05/29</label><br><br>
+                    <label for="exp-date-resp">2 to 7 Days</label><br><br>    
+                </section>
+        </section>
+        <section class="paymentmethod">
+            <label for="method">Accepted Payment Methods:</label><br><br><br>
+            <img src="images/other/acceptedCardPayments.png" alt="cards-to-pay" height="80"><br>
+            <button class="checkout" id="checkoutBTN"  onclick="check()">Checkout</button> 
+        </section>  
+    </section>        
     </main>
 
     <!-- Footer: -->
