@@ -58,9 +58,17 @@
                     </section>     -->
                 </td>
                 <td class="center">
-                    <button class="quantity-btn"><img class="quantity-img" src="images/icons/plus.png" alt="remove" height="25"></button>
-                    <input type="number" name="" id="quantity" value="1">
-                    <button class="quantity-btn"><img class="quantity-img"  src="images/icons/minus.png" alt="remove" height="25"></button>
+
+                   <section class="quantity-select-container">
+                    <button class="quantity-btn">
+                        <img class="quantity-img" src="images/icons/plus.png" alt="remove" height="25">
+                    </button>
+                    <input type="text" inputmode="numeric" pattern="[0-9]+" onkeypress="return onlyNumbers()" name="" id="quantity" placeholder="0">
+                    <button class="quantity-btn">
+                        <img class="quantity-img"  src="images/icons/minus.png" alt="remove" height="25">
+                    </button>
+                </secion>
+
                 </td>
                 <td class="price-recp"></td>
             </tr>
