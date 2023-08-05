@@ -604,6 +604,16 @@ form{
  
  table td {
    border-bottom: #00473E 1px solid;
+
+ }
+
+ .quantity-select-container{
+   display: flex;
+   align-items: center;
+   width: fit-content;
+   margin-left: 35%;
+   margin-bottom: 0.8rem;
+
  }
  
  
@@ -614,6 +624,7 @@ form{
    padding:0.3rem ;
    width: 2.5rem;
  }
+ 
  
  td a{
      text-decoration: none;
