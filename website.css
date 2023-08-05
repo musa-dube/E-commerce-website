@@ -24,9 +24,109 @@ a{
 }
 
 /*--------------SIGN-IN/UP-------------------*/
-.sign-in-up-container{
-  
+.sign-in-form{
+  border-radius: 0.5rem;
+  background-color: #8EAFA0 ;
+  width: 30%;
+  height: 80vh;
+  flex-shrink: 0;
 }
+
+.sign-in-form .exit{
+  background: none;
+  border: none;
+  width: fit-content;
+  margin-left: 17rem;
+  margin-top: 2rem;
+}
+
+.sign-in-form img{
+ margin: -5.5rem 6.5rem 0;
+}
+
+.sign-in-content{
+  margin-top: -5.5rem;
+  margin-left: 8rem;
+}
+
+
+.sign-in-content h1{
+  margin-left: 2rem;
+  font-size: 2em;
+  color: #00473E;
+}
+
+.sign-in-content input{
+  appearance: none;
+  font-size: 1em;
+	border: none;
+	border-bottom: .2em solid #00473E;
+	background: rgba(#00473E, .2);
+	border-radius: .2em .2em 0 0;
+  outline: none;
+	padding: 0.4em;
+  padding-left: 0.5rem;
+  width: 12.5rem;
+  margin-top: -1.5rem;
+}
+
+.sign-in-content a::after{
+  color: blue;
+}
+
+
+.forgot-password a{
+  text-decoration: transparent;
+  color: #00473E;
+}
+
+.sign-in-content button{
+  background-color: #00473E;
+  color: #00473E;
+  border-radius: 1rem;
+  font-weight: bold;
+  margin-top: 1rem ;
+  margin-left: 2rem;
+  height: 2.5rem;
+  width: 8rem;
+  
+  border: 3px solid #00473E;
+  background-image: -webkit-linear-gradient(30deg, #8EAFA0 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #8EAFA0 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+ 
+}
+
+.sign-in-content button:active,
+.sign-in-content button:hover{
+  background-position: 100%;
+  color: whitesmoke ;
+}
+
+
+.sign-in-container{
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+
+}
+/* ------------------------------------------------------ */
+
+
+
+
+
 
 
 /* ---------- HOME PAGE STYLING: ---------- */
@@ -409,7 +509,7 @@ a{
     color: #333;
     font-weight: bold;
     height: 1.5rem;
-    
+    transition: transform 0.2s ease-out;
   }
   
   .checkout, #subscribe{
@@ -420,7 +520,7 @@ a{
   .checkout:active{
       background-color:#00473E;
       color: whitesmoke;
-      transition: transform 0.5s ease-out;
+      
   }
   
   .bag{
@@ -760,6 +860,7 @@ form{
 
    #checkoutBTN{
     margin-top: 2rem;
+    transition: transform 0.5s ease-out;
    }
  
 
