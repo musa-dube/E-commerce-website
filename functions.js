@@ -12,3 +12,10 @@ function displayContent(contentID) {
     displaySelection.style.display = "block";
 
 }
+
+function onlyNumbers(event){
+    var numericRange = (event.which) ? event.which : event.keyCode
+    if (numericRange > 31 && (numericRange < 48 || numericRange > 57)) 
+        return false;
+    return true;
+}
