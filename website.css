@@ -33,11 +33,6 @@ a{
   flex-shrink: 0;
 }
 
-.sign-up-form{
-  margin: 1.5rem 25rem;
-  height: 45rem;
-  width: 50rem;
-}
 
 .sign-in-form .exit,
 .sign-up-form .exit{
@@ -149,8 +144,24 @@ a{
   display: flex; 
 }
 
+.sign-up-form{
+  margin: 3rem 24rem;
+  height: 40rem;
+  width: 50rem;
+}
+
+.sign-up-content input,
+.sign-up-content textarea{
+  font-size: large;
+  width: 18rem;
+}
+
+.column2 textarea{
+  height: 10.8rem;
+}
+
 .sign-up-form .exit{
-  margin: 0rem 25rem;
+  margin: 0rem 27.5rem;
 }
 
 .sign-up-form img{
@@ -162,12 +173,22 @@ a{
 }
 
 .column1{
-
+  margin-left: 4rem;
 }
 
 .column2{
-  margin-left:;
+  margin-left: 5rem;
+  width: fit-content;
 }
+
+.sign-up-btn{
+  margin-left: 20.2rem;
+}
+
+
+/* .column2 input, .column2 textarea{
+ width: 18rem;
+} */
 /* ------------------------------------------------------ */
 
 
