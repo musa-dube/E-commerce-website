@@ -23,8 +23,9 @@ a{
   transition: 0.5s;
 }
 
-/*--------------SIGN-IN/UP-------------------*/
-.sign-in-form{
+/*--------------SIGN-IN-------------------*/
+.sign-in-form,
+.sign-up-form{
   border-radius: 0.5rem;
   background-color: #8EAFA0 ;
   width: 30%;
@@ -32,10 +33,20 @@ a{
   flex-shrink: 0;
 }
 
-.sign-in-form .exit{
+.sign-up-form{
+  margin: 1.5rem 25rem;
+  height: 45rem;
+  width: 50rem;
+}
+
+.sign-in-form .exit,
+.sign-up-form .exit{
   background: none;
   border: none;
   width: fit-content;
+}
+
+.sign-in-form .exit{
   margin-left: 17rem;
   margin-top: 2rem;
 }
@@ -44,19 +55,26 @@ a{
  margin: -5.5rem 6.5rem 0;
 }
 
+
 .sign-in-content{
   margin-top: -5.5rem;
   margin-left: 8rem;
 }
 
 
-.sign-in-content h1{
-  margin-left: 2rem;
+.sign-in-content h1,
+.sign-up-content h1{
   font-size: 2em;
   color: #00473E;
 }
 
-.sign-in-content input{
+.sign-in-content h1{
+  margin-left: 2rem;
+}
+
+.sign-in-content input,
+.sign-up-content input,
+.sign-up-content textarea{
   appearance: none;
   font-size: 1em;
 	border: none;
@@ -65,9 +83,13 @@ a{
 	border-radius: .2em .2em 0 0;
   outline: none;
 	padding: 0.4em;
-  padding-left: 0.5rem;
   width: 12.5rem;
+}
+
+.sign-in-content input{
+  padding-left: 0.5rem;
   margin-top: -1.5rem;
+  
 }
 
 .sign-in-content a::after{
@@ -80,7 +102,8 @@ a{
   color: #00473E;
 }
 
-.sign-in-content button{
+.sign-in-content button,
+.sign-up-btn{
   background-color: #00473E;
   color: #00473E;
   border-radius: 1rem;
@@ -101,7 +124,8 @@ a{
  
 }
 
-.sign-in-content button:hover{
+.sign-in-content button:hover,
+.sign-up-btn:hover{
   background-position: 100%;
   color: whitesmoke ;
 }
@@ -118,7 +142,31 @@ a{
   width: 100%;
   height: 100vh;
   z-index: 9999;
+}
 
+/* -----------------------SIGN UP------------------------ */
+.sign-up-content{
+  display: flex; 
+}
+
+.sign-up-form .exit{
+  margin: 0rem 25rem;
+}
+
+.sign-up-form img{
+  margin: -2rem 18rem;
+}
+
+.sign-up-form h1{
+  margin: 0 20rem 1rem 20rem; 
+}
+
+.column1{
+
+}
+
+.column2{
+  margin-left:;
 }
 /* ------------------------------------------------------ */
 
@@ -269,8 +317,6 @@ a{
     font-weight: bold;
     font-style: italic;
 }
-
-
 
 /*  ---------- SHOP STYLING ---------- */
 
