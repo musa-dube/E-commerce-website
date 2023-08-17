@@ -87,8 +87,12 @@ a{
   
 }
 
-.sign-in-content a::after{
+.sign-in-content #forgot-password:hover{
   color: blue;
+}
+
+.sign-in-content #here-link:visited{
+  color:blue;
 }
 
 
@@ -142,6 +146,7 @@ a{
 /* -----------------------SIGN UP------------------------ */
 .sign-up-content{
   display: flex; 
+
 }
 
 .sign-up-form{
@@ -170,6 +175,8 @@ a{
 
 .sign-up-form h1{
   margin: 0 20rem 1rem 20rem; 
+  color: #333;
+  font-size: 2em;
 }
 
 .column1{
