@@ -385,14 +385,17 @@ a{
 
 .banners{
   display: inline-block;
-  animation: slide_next 35s infinite linear;
+  animation: slide_next 45s infinite linear;
 } 
 
  .banners .next {
   flex-shrink: 0;
-
 }
 
+.box-for-filter{
+  margin-left: 18rem;
+  width: 69rem;
+}
 
 .filters{
     color: #333;
@@ -403,7 +406,7 @@ a{
     gap: 1rem;
     justify-content: left;
     align-content: space-evenly;
-    padding: 0 3rem 2rem;
+    padding: 1.5rem 3rem 1.5rem;
     max-width: fit-content;
     margin-left: 12.5rem;
   }
@@ -426,7 +429,7 @@ a{
   }
   
 .row-1, .row-2{
-    max-width: fit-content;
+    max-width: 50rem;
     display: flex;
     flex-flow: row wrap;
     gap: 1.2rem;
@@ -451,15 +454,29 @@ a{
     background-color: #00473E;
     color: white;
   }
+
+.box-for-category,
+.box-for-filter{
+  border: 1px solid;
+  border-radius: 2rem;
+}
+
+.box-for-category{
+  width: 20rem;
+  margin-left: 2rem;
+  margin-top: 2rem ;
+}
   
 .category{
     color: #333;
     max-width: fit-content;
     /* padding: 1rem 2rem 0 2rem; */
-    padding: 1rem 7rem;
-  }
+    padding: 1rem 3rem;
+    margin-left: 1.5rem;
+    
+}
 
-.line{
+/* .line{
   background-color: #333;
   position: absolute;
   top: 43rem;
@@ -468,7 +485,7 @@ a{
   height: 70rem;
   z-index: -1;
 }
-  
+   */
   
 .heading{
     background-color: #74A58C;
@@ -485,7 +502,7 @@ a{
 
   .product-display
   {
-    border-top: #333 1px solid;
+    /* border-top: #333 1px solid; */
     display: flex;
     justify-content: center; 
     max-width: 990px;
