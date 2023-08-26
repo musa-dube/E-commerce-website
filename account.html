@@ -35,19 +35,53 @@
         </nav>
 
         <section class="account-header">
-            <img src="images/icons/profile2.png" alt="placeholder-image"><br>
+            <img src="images/icons/profile2.png" alt="placeholder-image" height="180"><br>
             <label for="name">Name: Musa</label><br>
             <button class="signout" onclick="">Sign Out</button>
             <button class="delete" onclick="">Delete Account</button>
-        </section>
+        </section><br><br>
 
         <section class="account-body">
             <section class="personal-info">
-
+                <h1>Personal Details</h1>
+                <div class="detail-label">
+                    <label for="" class="personal-detail-lbl">Email:</label><br>
+                    <label for="" class="personal-detail-lbl">Tel-number:</label><br>
+                    <label for="" class="personal-detail-lbl">Delivery Address:</label><br>
+                </div>
+                    <div class="detail-label">
+                        <label for="" class="personal-detail-lbl" id="user-email">Musa</label><br>
+                        <label for="" class="personal-detail-lbl" id="user-tel">083654169</label><br>
+                        <textarea class="personal-detail-lbl"name="address-sec" id="user-address" cols="25" rows="6">
+49 Berry Road
+Bedfordview
+2007
+                        </textarea>
+                    </div>
+                        <div class="detail-label">
+                            <label for="" class="personal-detail-lbl">New Password:</label><br>
+                            <input type="password" name="new-password" id=""><br>
+                    <label for="" class="personal-detail-lbl">Confirm Password:</label><br>
+                    <input type="password" name="new-password" id=""><br>
+                    <button type="submit">
+                        Save
+                    </button>
+                        </div>
             </section>
 
             <section class="product-review">
-    
+                <h1>Product Review</h1>
+                <label for="">Write a review for a product purchased:</label><br>
+                <textarea name="" id="" cols="30" rows="10" class="review-input"></textarea>
+                <div>
+                    <select name="" id="select-box">
+                        <option value="default"  class="prod-options">Select one of your purchases</option>
+                        <option value=""  class="prod-options"></option>
+                        <option value=""  class="prod-options"></option>
+                    </select><br>
+                    <img src="images/icons/3-stars.png" alt="star-rating" height="50"><br>
+                    <button class="post-review">Post</button>
+                </div>
             </section>
         </section>
 
