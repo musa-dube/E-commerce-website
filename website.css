@@ -346,6 +346,8 @@ a{
     font-style: italic;
 }
 
+
+
 /*------------MY ACCOUNT-------------------*/
 
 
@@ -353,32 +355,127 @@ a{
   min-height: 95vh;
 }
 
+#line{
+  border: 0.1px solid black;
+  margin-top: 0.5rem;
+  width: 55rem;
+}
 
+.account-header{
+  margin-left: 45rem;
+  margin-right: auto;
+}
 
+.account-header label{
+  margin-left: 2.5rem;
+  font-size: large;
+}
 
+.account-header button{
+  color:#333;
+  background-color:#FAAE2B;
+  border: transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.213rem;
+  font-weight: bold;
+  font-size: large;
+  padding: 0.2rem;
+  margin-left: 1rem;
+  width: 9rem;
+}
 
+.account-body{
+  margin-left: 25rem;
+}
 
+.account-body h1{
+  margin-top: 2rem;
+}
 
+.personal-info{
+  display: flex;
+  align-content: space-evenly;
+  gap: 9rem;
+}
 
+#post-btn,
+#save-btn,
+#send-btn
+{
+  color: #333;
+  background-color: #FAAE2B;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.213rem;
+  border: transparent;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 0.2rem;
+  width: 8vw;
+}
 
+#post-btn:active,
+#save-btn:active,
+#signout:active,
+#delete:active,
+#send-btn:active{
+  color: whitesmoke;
+  background-color: #00473E;
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /*------------MY ACCOUNT-------------------*/
 
-/*  ---------- SHOP STYLING ---------- */
+/*------------CONTACT PAGE-------------------*/
+.contact-main{
+  min-height: 95vh;
+}
 
+.contact-container form{
+  border: 4px solid #00473E;
+  border-radius: 1rem;
+  color: #333;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  max-width: 30rem;
+  margin-left: 35rem;
+}
+
+.contact-container form h1{
+  text-align: center;
+}
+
+
+.contact-container form label{
+  font-size: large;
+}
+
+.contact-container input, textarea {
+  width: 100%;
+  margin-bottom: 1rem; 
+}
+
+
+.contact-container input, textarea{
+  appearance: none;
+  font-size: 1em;
+  border: transparent;
+  background-color:#dededb;
+	border-bottom: .2em solid #00473E;
+	background: rgba(#00473E, .2);
+	border-radius: .2em .2em 0 0;
+  outline: none;
+	padding: 0.4em;
+}
+
+#send-btn{
+  margin-bottom: 1rem;
+}
+
+
+/*------------CONTACT PAGE-------------------*/
+
+
+/*  ---------- SHOP STYLING ---------- */
 
 .shop-main{
   max-height: 320vh;
@@ -432,7 +529,6 @@ a{
     color: #333;
     border-bottom: #333 ;
     display:inline-flex;
-    /* flex direction then wrap */
     flex-flow: row wrap;
     gap: 1rem;
     justify-content: left;
@@ -459,7 +555,8 @@ a{
     color: #74A58C;
   }
   
-.row-1, .row-2{
+.row-1, 
+.row-2{
     max-width: 50rem;
     display: flex;
     flex-flow: row wrap;
@@ -507,17 +604,6 @@ a{
     
 }
 
-/* .line{
-  background-color: #333;
-  position: absolute;
-  top: 43rem;
-  left: 21rem;
-  width: 0.063rem;
-  height: 70rem;
-  z-index: -1;
-}
-   */
-  
 .heading{
     background-color: #74A58C;
     border-radius: 0.213rem;
@@ -565,13 +651,13 @@ a{
     /* width: 20%; */
   }
 
-  .description-paragraph, .ingredients-list{
+  .description-paragraph, 
+  .ingredients-list{
     text-align: justify;
     width: 91%;
   }
   
   /* horizontal scroll bar for products */
-  
   .product-img::-webkit-scrollbar-thumb,
   .product-img::-webkit-scrollbar-track,
   .reviews::-webkit-scrollbar-thumb,
@@ -622,7 +708,8 @@ a{
   }
   
   
-  .checkout, .subscribe{
+  .checkout, 
+  .subscribe{
     background-color: #FAAE2B;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: none;
