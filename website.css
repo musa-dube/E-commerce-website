@@ -513,21 +513,16 @@ a{
 
 .banners{
   display: inline-block;
-  animation: slide_next 45s infinite linear;
+  animation: slide_next 50s infinite linear;
 } 
 
  .banners .next {
   flex-shrink: 0;
 }
 
-.box-for-filter{
-  margin-left: 18rem;
-  width: 69rem;
-}
 
 .filters{
     color: #333;
-    border-bottom: #333 ;
     display:inline-flex;
     flex-flow: row wrap;
     gap: 1rem;
@@ -535,7 +530,7 @@ a{
     align-content: space-evenly;
     padding: 1.5rem 3rem 1.5rem;
     max-width: fit-content;
-    margin-left: 12.5rem;
+    margin-left: 8.5rem;
   }
   
   .row-1{
@@ -553,6 +548,11 @@ a{
 
   .clear-filter:active{
     color: #74A58C;
+    text-decoration: underline;
+  }
+
+  .clear-filter:hover{
+    text-decoration: underline;
   }
   
 .row-1, 
@@ -585,8 +585,14 @@ a{
 
 .box-for-category,
 .box-for-filter{
-  border: 1px solid;
-  border-radius: 2rem;
+  border: none;
+  border: 1px solid #ddd;
+  border-radius: 1.25rem;
+  background: F9F8F8;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+  margin-left: 22rem;
+  width: 65rem;
+
 }
 
 .box-for-category{
