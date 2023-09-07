@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="website.css">
     <script src="functions.js" async></script>
     <link rel="icon" type="image/png" href="images/icons/favicon.ico">
-    <title>Bag</title>
+    <title>Contact Us</title>
 </head>
 
 
 <body>
-    <main class="bag-main">
+    <main class="contact-main">
         <img class="logo" id="logo-id" src="images/icons/logo-2.png" alt="careflow-logo" height="70" width="220">
         <nav class="other-nav">
             <ul class="nav-list">
@@ -27,13 +27,27 @@
                 <li class="nav-list-search">
                     <input type="search" name="search" class="input-search" placeholder="Type product name ...">
                 </li>
-        
                 <li class="nav-list-item"><a href="blog.html"  target="_blank">BLOG</a></li>
                 <li class="nav-list-item"><a href="contact.html"  target="_self">CONTACT</a></li>
                 <li class="nav-list-item"><a href="account.html"  target="_self">SIGN IN/UP</a></li>
             </ul>
         </nav>
 
+
+        <article class="contact-container">
+            <form id="contact-form-id" action="" class="contact-form">
+                <h1>Send us a message</h1><br>
+              
+                <label for="">Name</label><br><br>
+                <input type="text" name="" id="" required="true"><br><br>
+                <label for="">Email Address</label><br><br>
+                <input type="email" name="" id="" required="true"><br><br>
+                <label for="">Message</label><br><br>
+                <textarea name="" id="" cols="40" rows="10" required="true"></textarea><br>
+                <small id="note">We will respond within 48 hours</small><br><br>
+                <button type="submit" id="send-btn">Send</button>
+            </form>
+        </article>
         
 
     </main>
@@ -58,7 +72,7 @@
             </div>
             <div class="foot">
                 <h3>Support</h3>
-                 <a href="contact.php">Contact Form</a><br>
+                 <a href="contact.html">Contact Form</a><br>
                 <label for="email-careflow">info@careflow.co.za</label><br><br>
                 <label for="tel-careflow">011 645 1092</label>
             </div>
