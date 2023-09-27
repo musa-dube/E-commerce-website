@@ -19,3 +19,8 @@ function onlyNumbers(event){
         return false;
     return true;
 }
+
+function showLogin() { 
+    var loginScreen = document.getElementById(".sign-in-id");
+    loginScreen.style.marginLeft = "auto";
+}

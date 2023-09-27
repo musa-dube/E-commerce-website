@@ -24,6 +24,12 @@ a{
 }
 
 /*--------------SIGN-IN-------------------*/
+
+.sign-in-container{
+    margin-left: 500rem;
+}
+
+
 .sign-in-form,
 .sign-up-form{
   border-radius: 0.5rem;
@@ -356,7 +362,7 @@ a{
 }
 
 #line{
-  border: 0.1px solid black;
+  border: 0.2px solid black;
   margin-top: 0.5rem;
   width: 55rem;
 }
@@ -395,7 +401,7 @@ a{
 .personal-info{
   display: flex;
   align-content: space-evenly;
-  gap: 9rem;
+  gap: 7rem;
 }
 
 #post-btn,
@@ -423,6 +429,12 @@ a{
 
 }
 
+#select-box{
+  border-radius: 0.213rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
+
 /*------------MY ACCOUNT-------------------*/
 
 /*------------CONTACT PAGE-------------------*/
@@ -431,11 +443,10 @@ a{
 }
 
 .contact-container form{
-  border: 2px solid #ddd;
-  border-radius: 1.25rem;
-  background: #F9F8F8;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 1rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+  background:#F9F9F9;
+  border-radius: 2rem;
+
   color: #333;
   padding: 2.5rem;
   margin-bottom: 3rem;
@@ -452,13 +463,22 @@ a{
   font-size: large;
 }
 
-.contact-container input, textarea {
+.contact-container input{
+  height: 2.5rem;
+}
+
+.contact-container input, 
+.contact-container textarea {
   width: 100%;
   margin-bottom: 1rem; 
 }
 
 
-.contact-container input, textarea{
+.contact-container form input, 
+.contact-container form textarea,
+.detail-label input,
+.detail-label textarea,
+.product-review textarea{
   appearance: none;
   font-size: 1em;
   border: transparent;
@@ -470,9 +490,21 @@ a{
 	padding: 0.4em;
 }
 
+.detail-label input,
+.detail-label textarea
+{
+  width: 15rem;
+}
+
+.product-review textarea, 
+#select-box{
+  width: 20rem;
+}
+
 #send-btn{
   margin-bottom: 1rem;
 }
+
 
 
 /*------------CONTACT PAGE-------------------*/
