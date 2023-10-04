@@ -26,9 +26,12 @@ a{
 /*--------------SIGN-IN-------------------*/
 
 .sign-in-container{
-    margin-left: 500rem;
+  margin-left:500rem;
 }
 
+.sign-in-form{
+   margin: 5rem auto;
+}
 
 .sign-in-form,
 .sign-up-form{
@@ -48,11 +51,11 @@ a{
 }
 
 .sign-in-form .exit{
-  margin-left: 17rem;
-  margin-top: 2rem;
+  margin-left: 11rem;
+  margin-top: 1rem;
 }
 
-.sign-in-form img{
+.sign-in-form .logo{
  margin: -5.5rem 6.5rem 0;
 }
 
