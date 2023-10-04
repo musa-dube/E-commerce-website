@@ -20,7 +20,36 @@ function onlyNumbers(event){
     return true;
 }
 
-function showLogin() { 
-    var loginScreen = document.getElementById(".sign-in-id");
-    loginScreen.style.marginLeft = "auto";
+//show sign in or up form:
+var isOpen = false; 
+function toggle() {
+    var showForm = document.getElementsByClassName('sign-in-container')[0];
+ 
+    if (isOpen) {
+        showForm.style.marginLeft = 'auto'; 
+        showForm.style.display = 'none'; 
+        
+    } else {
+        showForm.style.marginLeft = '0';    
+        showForm.style.display = 'block';  
+    }
+    isOpen = !isOpen; 
 }
+
+document.getElementById('showLink').addEventListener('click', toggle);
+
+//close login:
+var isClosed = false;
+function close() { 
+    var form = document.getElementsByClassName('sign-in-container')[0];
+    
+    if (isClosed) {
+        form.style.marginLeft = '0';    
+        form.style.display = 'block';  
+    } else { 
+        form.style.marginLeft = '500rem';
+    }
+    isClosed = !isClosed;
+}
+
+document.getElementById('closeId').addEventListener('click', close);
