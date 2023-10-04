@@ -6,8 +6,8 @@
     <meta name="description" content="An e-commerce website that sells skin care products">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
-    <link rel="stylesheet" href="website.css">
     <script src="functions.js" async></script>
+    <link rel="stylesheet" href="website.css">
     <link rel="icon" type="image/png" href="images/icons/favicon.ico">
     <title>Home</title>
 </head>
@@ -20,7 +20,7 @@
                     <li class="nav-list-item"><a href="index.html" target="_self">HOME</a></li>
                     <li class="nav-list-item"><a href="#aboutID"  target="_self" >ABOUT</a></li>
                     <li class="nav-list-item"><a href="shop.html"  target="_self">SHOP</a></li>
-                    <li class="nav-list-item"><a href="bag.html"  target="_elf">BAG</a></li>
+                    <li class="nav-list-item"><a href="bag.html"  target="_self">BAG</a></li>
                     <!-- search feature: -->
                     <li class="nav-list-search">
                         <input type="search" name="search" class="input-search-home" placeholder=" Type product name ...">
@@ -28,7 +28,9 @@
             
                     <li class="nav-list-item"><a href="blog.html"  target="_blank">BLOG</a></li>
                     <li class="nav-list-item"><a href="contact.html"  target="_self">CONTACT</a></li>
-                    <li class="nav-list-item"><a href="#sign-in-up-container"  target="_self">SIGN IN/UP</a></li>
+                    <li class="nav-list-item"><a href="#" id="showLink"  target="_self">SIGN IN/UP</a></li>
+                    
+                    
                 </ul>
                </nav>
                <img id="white-logo" src="images/icons/white-logo.png" alt="company logo">
@@ -36,21 +38,21 @@
         </section>
 
         <!-- SIGN IN CONTAINER -->
-            <article class="sign-in-container" id="sign-in-id">
+            <article class="sign-in-container" >
                 <form class="sign-in-form" action="">
-                    <button class="exit"> <img src="images/icons/cancel-2.png" alt="exit"></button>
-                    <img src="images/icons/icon-logo.png" alt="icon-logo">
-                    <section class="sign-in-content">
-                        <h1>Welcome</h1>
-                        <input type="email" placeholder="Email Address" id="emailInput"><br><br>
-                        <input type="password" name="password" placeholder="Enter Password" id="passcodeInput"><br>
-                        <small class="forgot-password"><a href="" id="forgot-password">Forgot password</a></small><br><br>
-                        <label for="sign-up">Sign up for an account </label><a href="#sign-up-form-id" id="here-link">here</a><br>
-                        <button class="sign-in-btn">SIGN IN</button>
-                    </section>
+                    <button class="exit"> <img class="exit" src="images/icons/cancel-2.png" alt="exit"></button>
+                    <img class="logo" id="closeId" src="images/icons/icon-logo.png" alt="icon-logo">
+                        <section class="sign-in-content">
+                            <h1>Welcome</h1>
+                            <input type="email" placeholder="Email Address" id="emailInput"><br><br>
+                            <input type="password" name="password" placeholder="Enter Password" id="passcodeInput"><br>
+                            <small class="forgot-password"><a href="" id="forgot-password">Forgot password</a></small><br><br>
+                            <label for="sign-up">Sign up for an account </label><a href="#sign-up-form-id" id="here-link">here</a><br>
+                            <button class="sign-in-btn">SIGN IN</button>
+                        </section>
                 </form>
             </article>
-        <!--  -->
+        <!-- -->
 
       
 
@@ -78,5 +80,6 @@
             </p>
         </section>
     </main>
+   
 </body>
 </html>
