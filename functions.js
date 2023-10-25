@@ -20,18 +20,21 @@ function onlyNumbers(event){
     return true;
 }
 
-//show sign in or up form:
+
+//show sign in or up form onclick:
+var form = document.getElementsByClassName('sign-in-container')[0];
+
 var isOpen = false; 
 function toggle() {
-    var showForm = document.getElementsByClassName('sign-in-container')[0];
- 
     if (isOpen) {
-        showForm.style.marginLeft = 'auto'; 
-        showForm.style.display = 'none'; 
+        //hide
+        form.style.marginLeft = 'auto'; 
+        form.style.display = 'none'; 
         
     } else {
-        showForm.style.marginLeft = '0';    
-        showForm.style.display = 'block';  
+        //display
+        form.style.marginLeft = '0';    
+        form.style.display = 'block';  
     }
     isOpen = !isOpen; 
 }
@@ -40,16 +43,19 @@ document.getElementById('showLink').addEventListener('click', toggle);
 
 //close login:
 var isClosed = false;
-function close() { 
-    var form = document.getElementsByClassName('sign-in-container')[0];
-    
+function close() {  
     if (isClosed) {
+        //display
         form.style.marginLeft = '0';    
         form.style.display = 'block';  
     } else { 
+        //hide
         form.style.marginLeft = '500rem';
     }
     isClosed = !isClosed;
 }
 
 document.getElementById('closeId').addEventListener('click', close);
+
+
+//shop add item to cardt
