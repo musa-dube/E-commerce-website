@@ -57,5 +57,10 @@ function close() {
 
 document.getElementById('closeId').addEventListener('click', close);
 
-
-//shop add item to cardt
+// switch between product images through scroll:
+window.onload = function () { 
+    //index of current image:
+    var index = 0;
+    //array of images from db:
+    var products = document.getElementsByClassName('product-image');
+}
