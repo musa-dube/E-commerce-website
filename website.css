@@ -28,17 +28,17 @@ a{
    appearance: none;
   -webkit-appearnce: none;
   border: 1px solid #333;
-  width: 0.813rem;
-  height: 0.813rem;
   background-color: #ebebeb;
   border-radius: 0.212rem;
+  width: 0.813rem;
+  height: 0.813rem;
   margin-right: 0.313rem ;
-
 }
 
 .check:checked{
   background-color: #00473E;
 }
+
 
 
 
