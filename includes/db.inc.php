@@ -1,8 +1,9 @@
 <?php
 
-    $dsn= "mysql:host=localhost;dbname=careflow_db";
-    $dbusername="root";
-    $dbpassword="";
+    $dsn= "mysql:$host=localhost;$dbname=careflow_db";
+    $dbname = "careflow_db";
+    $dbusername= "root";
+    $dbpassword= "";
   
     try
     {
@@ -14,5 +15,7 @@
     {
         echo "Connection failed: " . $exp->getMessage(); //display error in browser 
     }
+
+
 
     
