@@ -15,22 +15,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
             try
             {
                 require_once "db.inc.php"; // a method to link files like <link in css
-                require_once "";
-                $query = "INSERT INTO customer(name, lastname, email, password, address_line) VALUES(?,?,?,?,?);" ;
-                $statement = $pdo->prepare($query);
+                require_once "signup_model.inc.php";
+                require_once "signup_controller.inc.php";
 
-                if($passcode == $confirmPasscode)
-                {
-                        $statement->execute([$name,$lastname, $email, $passcode,$address]);
+                if(isInputEmpty($name, $lastname, $email, $passcode, $confirmPassword, $addressLine)){
 
-                        header("Location: ../index.php");
-
-                        exit();
                 }
-                else
-                {
-                    echo "ERROR: passwords entered do not match";
+
+                if(isEmailValid($email)){
+
                 }
+
             }
             catch(PDOException $exp)
             {
