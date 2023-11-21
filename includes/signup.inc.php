@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
             try
             {
                 require_once "db.inc.php"; // a method to link files like <link in css
+                require_once "";
                 $query = "INSERT INTO customer(name, lastname, email, password, address_line) VALUES(?,?,?,?,?);" ;
                 $statement = $pdo->prepare($query);
 
@@ -39,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 } 
 else {
     header("Location: ../index.php");
+    die();
 }
 
 //only sanitize data when its being ouputted
