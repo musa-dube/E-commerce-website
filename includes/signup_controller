@@ -1,0 +1,20 @@
+<?php 
+
+declare(strict_types=1);
+
+function isInputEmpty($name, $lastname, $email, $password, $confirmPassword, $addressLine){
+    if(empty($name) ||empty($lastname) ||empty($email)  || empty($password)  || empty($confirmPassword)  || empty($addressLine))
+    {
+        return true;
+    }else{    return false;}
+
+}
+
+function isEmailValid($email){
+    if( filter_var($email, FILTER_VALIDATE_EMAIL))
+    {
+        return true;}
+    else{
+        return false;}
+        
+}
