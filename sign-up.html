@@ -9,15 +9,15 @@
 <body>
     <main>
         <!-- SIGN UP CONTAINER -->
-        <article  id="sign-up-form-id">
-        <form class="sign-up-form" action="includes/handler.inc.php" method="post">
+     <article  id="sign-up-form-id">
+        <form class="sign-up-form" action="includes/sign.inc.php" method="post">
             <button class="exit"> <img src="images/icons/cancel-2.png" alt="exit"></button>
             <img src="images/icons/icon-logo.png" alt="icon-logo" height="250">
             <h1>Sign Up</h1>
             <!-- sign up fields -->
             <section class="sign-up-content">
                 <section class="column1">
-                    <input type="text" placeholder="Enter Firstname" id="name"><br><br>
+                    <input type="text" placeholder="Enter Firstname" id="name" name="name"><br><br>
                     <input type="email" placeholder="Email Address" id="emailInput"><br><br>
                     <input type="password" name="password" placeholder="Enter Password" id="passcodeInput"><br><br>
                     <input type="password" name="password" placeholder="Confirm Password" id="passcodeConfirm"><br><br>
@@ -31,7 +31,9 @@ Address line 3
 Address line 4"></textarea>
                 </section>
             </section>
-                <button class="sign-up-btn">SIGN UP</button>
+                <button type="submit" [disabled]="!form.form.valid">
+                    SIGN UP
+                </button>
         </form>
     </article>
     <!--  -->
