@@ -1,13 +1,17 @@
- <!DOCTYPE html>
+<?php
+
+require_once "db.inc.php";
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Musa Dube">
     <meta name="description" content="An e-commerce website that sells skin care products">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="functions.js" async></script>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
     <link rel="stylesheet" href="website.css">
-    <script src="functions.js" async></script>
     <link rel="icon" type="image/png" href="images/icons/favicon.ico">
     <title>Shop</title>
 </head>
@@ -33,8 +37,8 @@
             </ul>
         </nav>
 
-         <!-- image banners -->
-       <section class="banner-container">
+ <!-- careflow banners -->
+        <section class="banner-container">
         <section class="banners">
             <img class="first"  src="images/other/Banner-1.jpg" alt="banner-1" height="387">
             <img class="next" src="images/other/banner-2.png" alt="banner-2">
@@ -101,6 +105,30 @@
     </article>
 
         <br><br>
+   
+        <?php
+
+        $productImgs = "SELECT img FROM inventory";
+        $productTitle = "SELECT title FROM inventory";
+        $rating = "SELECT rating FROM inventory";
+        $price = "SELECT price FROM inventory";
+        $productDesc = "SELECT description FROM inventory";
+        $ingredients= "SELECT ingredients FROM inventory";
+        $quantity = "SELECT quantity FROM inventory";
+
+        $fetchImg = $pdo->query($productImgs);
+        $fetchTitle = $pdo->query($productTitle);
+        $fetchRating = $pdo->query($productRating);
+        $fetchPrice = $pdo->query($productPrice);
+        $fetchDesc = $pdo->query($productDesc);
+        $fetchIngredients = $pdo->query($ingredients);
+        $fetchQuantity = $pdo->query($quantity);
+
+        foreach($productImgs){
+ 
+        }
+
+    ?>
 
         <article class="product-display">
                 <!-- product info section -->
