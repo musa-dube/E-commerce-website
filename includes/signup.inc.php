@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
             //Send data to db
             try
             {
-                require_once "db.inc.php"; // a method to link files like <link in css
+                require_once "db.inc.php"; 
                 require_once "signup_model.inc.php";
                 require_once "signup_controller.inc.php";
 
